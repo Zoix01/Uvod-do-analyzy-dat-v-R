@@ -98,6 +98,6 @@ countries |>
   filter(!is.na(dem_index))|> 
   rename(democracy_index = dem_index)|> 
   slice_max(n = 3, order_by = democracy_index, by = eu_member)|> 
-  write_csv("data/top-democracies.csv")
+  write_csv("data/top-democracies.csv") 
   
 
